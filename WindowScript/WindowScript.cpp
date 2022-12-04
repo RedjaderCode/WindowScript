@@ -11,6 +11,11 @@ SDL_Renderer * cRender;
 const uint16_t nScreenWidth = NULL;
 const uint16_t nScreenHeight = NULL;
 
+typedef void(*lambda)();
+
+inline void initialize(lambda l){ l(); }
+inline const char* storeccptr(char * el1, char * el2); // return string
+
 size_t _copy_file(const char * _file, FILE *_f, FILE *_fw){
 	// Create a better way to store the buffer. content not displayed correctly. format? insufficient memory //
     fopen_s(&_f, _file, "rb" );
