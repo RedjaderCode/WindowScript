@@ -44,6 +44,10 @@ inline void start(const char * _file, FILE *_f, FILE *_fw){
 
 
 int main(int s, char * z[]){
+	
+	/*
+	Here is an idea, create a input dialogue for typing text into a console. Associate a char to every key. Figure out how to load this into a buffer dynamically.
+	*/
 
     FILE *f;
     FILE *fw;
