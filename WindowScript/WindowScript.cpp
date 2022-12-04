@@ -5,7 +5,7 @@
 #include <SDL.h>
 #include <SDL_Image.h>
 
-SDL_Window *   cWindow;
+SDL_Window   * cWindow;
 SDL_Renderer * cRender;
 
 const uint16_t nScreenWidth = NULL;
@@ -14,7 +14,7 @@ const uint16_t nScreenHeight = NULL;
 size_t _copy_file(const char * _file, FILE *_f, FILE *_fw){
 	// Create a better way to store the buffer. content not displayed correctly. format? insufficient memory //
     fopen_s(&_f, _file, "rb" );
-    fseek  (_f, 0, SEEK_END );
+    fseek  (_f, 0, SEEK_END  );
     size_t size_of_file = ftell(_f);
     char * buffer       = new char[size_of_file];
 
@@ -32,7 +32,6 @@ inline void start(const char * _file, FILE *_f, FILE *_fw){
 	/* Create a string buffer to store the dynamic buffer into */
 	/* Create a function to store 'function(start of string in element access form, end of string)' into a string */
 		// note this has to be done step by step based on conditionals
-	
 
     std::cout << "\n\nconfiguration process finished! press ESC to close..." << std::endl;
 	while(1){ if(GetAsyncKeyState(VK_ESCAPE & 0x1B)) break; }
