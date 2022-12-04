@@ -1,0 +1,6 @@
+WindowScript.cpp:14:8:size_t _copy_file(const char*, FILE*, FILE*)	64	static
+WindowScript.cpp:32:13:void start(const char*, FILE*, FILE*)	64	static
+WindowScript.cpp:40:5:int SDL_main(int, char**)	80	static
+C:/msys64/mingw64/include/c++/11.2.0/iostream:74:25:void __tcf_0()	48	static
+WindowScript.cpp:51:1:void __static_initialization_and_destruction_0(int, int)	48	static
+WindowScript.cpp:51:1:cpp)	48	static
