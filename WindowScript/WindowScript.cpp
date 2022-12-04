@@ -11,7 +11,7 @@ SDL_Renderer * cRender;
 const uint16_t nScreenWidth = NULL;
 const uint16_t nScreenHeight = NULL;
 
-typedef void(*lambda)();
+typedef inline static void(*lambda)();
 
 inline void initialize(lambda l){ l(); }
 inline const char* storeccptr(char * el1, char * el2); // return string
